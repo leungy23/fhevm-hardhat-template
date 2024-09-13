@@ -1,6 +1,7 @@
+import { ethers } from "hardhat";
+
 import type { EncryptedFunds } from "../../types";
 import { getSigners } from "../signers";
-import { ethers } from "hardhat";
 
 // Deploy the EncryptedFunds contract
 export async function deployEncryptedFundsFixture(): Promise<EncryptedFunds> {
